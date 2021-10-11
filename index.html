@@ -1,0 +1,61 @@
+ 
+<html>
+  <head>
+    <title>Hand gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h3 style="font-family: comic sans ms;font-weight: bolder;color: gold;">Hand Gestures
+  <br>
+  <Span>&#9995</Span>
+  <Span>&#9996</Span>
+  <Span>&#128070</Span>
+  <Span>&#128071</Span>
+  <Span>&#128072</Span>
+  <Span>&#128073</Span>
+  </h3>
+<br>
+      </p>
+      <br>
+      <div><label style="color: darkgreen; background-color: white; font-family: comic sans ms;font-weight: bolder; border: darkgreen;">Prediction_1  -</label></div>
+      <p class = "emotion_name" id ="result_emotion_name_1"></p>
+      <p class = "emoji" id ="result_update_emoji_1"></p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style="color: gold;">webcam veiw - </label>
+        <div id = "camera"></div>
+        <br><br>
+        <button style="color: gold; background-color: gray; font-family: comic sans ms;font-weight: bolder;" onclick="take_snapshot()">Capture Image</button>
+        </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label style="color: gold; position: right;">Snapshot - </label>
+        <div id = "Snapshot"></div>
+        <br><br>
+        <button style="color: gold; background-color: gray; font-family: comic sans ms;font-weight: bolder; text-align: right;" onclick="check()">Gesturization</button>
+        </div>
+
+    
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</center>
+</html>
+
+
+ 
